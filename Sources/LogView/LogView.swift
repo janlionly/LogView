@@ -114,6 +114,7 @@ open class LogView: UIView {
     
     @objc private func didTap() {
         self.isHidden = !self.isHidden
+        makeVisible()
     }
     
     @objc private func didClear() {
