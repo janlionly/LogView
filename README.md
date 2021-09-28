@@ -1,7 +1,7 @@
 # LogView
-[![Version](https://img.shields.io/cocoapods/v/AvatarImagePicker.svg?style=flat)](https://cocoapods.org/pods/AvatarImagePicker)
-[![License](https://img.shields.io/cocoapods/l/AvatarImagePicker.svg?style=flat)](https://github.com/janlionly/AvatarImagePicker/blob/master/LICENSE)
-[![Platform](https://img.shields.io/cocoapods/p/AvatarImagePicker.svg?style=flat)](https://github.com/janlionly/AvatarImagePicker)
+[![Version](https://img.shields.io/cocoapods/v/LogView.svg?style=flat)](https://cocoapods.org/pods/LogView)
+[![License](https://img.shields.io/cocoapods/l/LogView.svg?style=flat)](https://github.com/janlionly/LogView/blob/master/LICENSE)
+[![Platform](https://img.shields.io/cocoapods/p/LogView.svg?style=flat)](https://github.com/janlionly/LogView)
 ![Swift](https://img.shields.io/badge/%20in-swift%204.2-orange.svg)
 
 ## Description
@@ -58,4 +58,4 @@ I would love you to contribute to **LogView**
 
 ## License
 
-**LogView** is available under the MIT license. See the [LICENSE](https://github.com/janlionly/AvatarImagePicker/blob/master/LICENSE) file for more info.
+**LogView** is available under the MIT license. See the [LICENSE](https://github.com/janlionly/LogView/blob/master/LICENSE) file for more info.
