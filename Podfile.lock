@@ -1,0 +1,16 @@
+PODS:
+  - LogView (1.0.1)
+
+DEPENDENCIES:
+  - LogView
+
+SPEC REPOS:
+  trunk:
+    - LogView
+
+SPEC CHECKSUMS:
+  LogView: 7c75ea396bd4d13c70660310f3c3fad93d79a3ba
+
+PODFILE CHECKSUM: 71455bf5f7c0f63b1681379a58126e73c280ed40
+
+COCOAPODS: 1.11.2
