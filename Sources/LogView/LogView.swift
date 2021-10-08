@@ -96,8 +96,10 @@ open class LogView: UIView {
     }
     
     public func makeVisible() {
-        if let v = UIApplication.shared.keyWindow {
-            v.addSubview(self)
+        if isDebug {
+            if let v = UIApplication.shared.keyWindow {
+                v.addSubview(self)
+            }
         }
     }
     

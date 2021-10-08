@@ -32,6 +32,9 @@ pod 'LogView'
 ```swift
 DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
   let logView = LogView.shared
+  // switch
+  logView.isDebug = true
+  
 	// optional: your can customize initial frame
 	logView.frame = CGRect(x:0, y:0, width: 200, height: 300)
 
