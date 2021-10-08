@@ -14,8 +14,24 @@ open class LogView: UIView {
     private let buttonTag = 3423842
     private let labelTag = 9281174
     private var initialCenter: CGPoint = .zero
+    private var winTap: UITapGestureRecognizer? = nil
     
     public static let shared = LogView(frame: CGRect(x: 0, y: 2 * 44, width: UIScreen.main.bounds.width*3/4, height: UIScreen.main.bounds.height*3/4))
+    public var isDebug: Bool = false {
+        didSet {
+            if isDebug {
+                // Two fingers double tap for hide/show
+                winTap = UITapGestureRecognizer(target: self, action: #selector(didTap(_:)))
+                winTap!.numberOfTapsRequired = 2
+                winTap!.numberOfTouchesRequired = 2
+                UIApplication.shared.keyWindow?.addGestureRecognizer(winTap!)
+            } else {
+                if let tap = winTap {
+                    UIApplication.shared.keyWindow?.removeGestureRecognizer(tap)
+                }
+            }
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -51,12 +67,6 @@ open class LogView: UIView {
         
         let pan = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
         self.addGestureRecognizer(pan)
-        
-        // Two fingers double tap for hide/show
-        let tap = UITapGestureRecognizer(target: self, action: #selector(didTap))
-        tap.numberOfTapsRequired = 2
-        tap.numberOfTouchesRequired = 2
-        UIApplication.shared.keyWindow?.addGestureRecognizer(tap)
     }
     
     open override var frame: CGRect {
@@ -112,7 +122,7 @@ open class LogView: UIView {
         }
     }
     
-    @objc private func didTap() {
+    @objc private func didTap(_ sender: UITapGestureRecognizer) {
         self.isHidden = !self.isHidden
         makeVisible()
     }
