@@ -20,11 +20,11 @@ pod 'LogView'
 
 ### Swift Package Manager
 
-- iOS: Open Xcode, File->Swift Packages, search input **https://github.com/janlionly/LogView.git**, and then select Version Up to Next Major **1.0.1** < .
+- iOS: Open Xcode, File->Swift Packages, search input **https://github.com/janlionly/LogView.git**, and then select Version Up to Next Major **1.1.0** < .
 - Or add dependencies in your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/janlionly/LogView.git", .upToNextMajor(from: "1.0.1")),
+.package(url: "https://github.com/janlionly/LogView.git", .upToNextMajor(from: "1.1.0")),
 ```
 
 ## Usage
