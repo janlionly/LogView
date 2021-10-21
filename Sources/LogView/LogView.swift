@@ -12,7 +12,7 @@ open class LogView: UIView {
     private let mainTag = 102938457
     private let textViewTag = 334598622
     private let buttonTag = 3423842
-    private let labelTag = 9281174
+    private let button2Tag = 9281174
     private var initialCenter: CGPoint = .zero
     private var winTap: UITapGestureRecognizer? = nil
     
@@ -50,20 +50,21 @@ open class LogView: UIView {
         button.addTarget(self, action: #selector(didClear), for: .touchUpInside)
         button.tag = buttonTag
         
-        let label = UILabel(frame: CGRect(x: 0, y: frame.height - 34, width: frame.width, height: 34))
-        label.backgroundColor = .black.withAlphaComponent(0.75)
-        label.text = "Pan Area"
-        label.font = UIFont.boldSystemFont(ofSize: 12)
-        label.textAlignment = .center
-        label.textColor = .white
-        label.tag = labelTag
+        let button2 = UIButton(type: .system)
+        button2.frame = CGRect(x: 0, y: frame.height - 34, width: frame.width, height: 34)
+        button2.backgroundColor = .systemPink.withAlphaComponent(0.75)
+        button2.setTitle("Clear Log(Pan Area)", for: .normal)
+        button2.titleLabel?.font = UIFont.boldSystemFont(ofSize: 12)
+        button2.setTitleColor(.white, for: .normal)
+        button2.addTarget(self, action: #selector(didClear), for: .touchUpInside)
+        button2.tag = button2Tag
         
         self.tag = mainTag
         self.backgroundColor = .clear
         
         self.addSubview(button)
         self.addSubview(textView)
-        self.addSubview(label)
+        self.addSubview(button2)
         
         let pan = UIPanGestureRecognizer(target: self, action: #selector(didPan(_:)))
         self.addGestureRecognizer(pan)
@@ -73,11 +74,11 @@ open class LogView: UIView {
         didSet {
             guard let textView = self.viewWithTag(textViewTag) else { return }
             guard let button = self.viewWithTag(buttonTag) else { return }
-            guard let label = self.viewWithTag(labelTag) else { return }
+            guard let button2 = self.viewWithTag(button2Tag) else { return }
             
             textView.frame = CGRect(x: 0, y: 34, width: frame.width, height: frame.height - 34*2)
             button.frame = CGRect(x: 0, y: 0, width: frame.width, height: 34)
-            label.frame = CGRect(x: 0, y: frame.height-34, width: frame.width, height: 34)
+            button2.frame = CGRect(x: 0, y: frame.height-34, width: frame.width, height: 34)
         }
     }
     

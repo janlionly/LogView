@@ -13,6 +13,7 @@
 		278D7CE227043C9A00C120AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278D7CE027043C9A00C120AA /* Main.storyboard */; };
 		278D7CE427043C9E00C120AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 278D7CE327043C9E00C120AA /* Assets.xcassets */; };
 		278D7CE727043C9E00C120AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 278D7CE527043C9E00C120AA /* LaunchScreen.storyboard */; };
+		27A0945427210D0B00043234 /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A0945327210D0B00043234 /* LogView.swift */; };
 		A3877ED67C42505E9B8B0A30 /* Pods_LogViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5B72C4A195A5F07B2802D3 /* Pods_LogViewDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		278D7CE327043C9E00C120AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		278D7CE627043C9E00C120AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		278D7CE827043C9E00C120AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27A0945327210D0B00043234 /* LogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogView.swift; path = Sources/LogView/LogView.swift; sourceTree = SOURCE_ROOT; };
 		6A5B72C4A195A5F07B2802D3 /* Pods_LogViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LogViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65E1D085FDB578F0E85A796 /* Pods-LogViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogViewDemo.release.xcconfig"; path = "Target Support Files/Pods-LogViewDemo/Pods-LogViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E61B66469F2AF016AB96C3F0 /* Pods-LogViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LogViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-LogViewDemo/Pods-LogViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				278D7CDC27043C9A00C120AA /* SceneDelegate.swift */,
 				278D7CDE27043C9A00C120AA /* ViewController.swift */,
 				278D7CE027043C9A00C120AA /* Main.storyboard */,
+				27A0945327210D0B00043234 /* LogView.swift */,
 				278D7CE327043C9E00C120AA /* Assets.xcassets */,
 				278D7CE527043C9E00C120AA /* LaunchScreen.storyboard */,
 				278D7CE827043C9E00C120AA /* Info.plist */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				278D7CDF27043C9A00C120AA /* ViewController.swift in Sources */,
+				27A0945427210D0B00043234 /* LogView.swift in Sources */,
 				278D7CDB27043C9A00C120AA /* AppDelegate.swift in Sources */,
 				278D7CDD27043C9A00C120AA /* SceneDelegate.swift in Sources */,
 			);
@@ -358,7 +362,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RVZ99V4PL3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LogViewDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -387,7 +391,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = RVZ99V4PL3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LogViewDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

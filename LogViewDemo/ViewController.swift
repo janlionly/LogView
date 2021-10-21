@@ -6,14 +6,14 @@
 //
 
 import UIKit
-import LogView
+//import LogView
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        LogView.shared.isDebug = true
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.25) {
             LogView.shared.makeVisible()
